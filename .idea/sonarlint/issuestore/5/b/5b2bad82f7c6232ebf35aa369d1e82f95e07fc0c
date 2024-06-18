@@ -1,0 +1,17 @@
+
+K
+java:S1066 "/Merge this if statement with the enclosing one.(Óøíšÿÿÿÿÿ
+7
+java:S1116<"Remove this empty statement.(ôŸìúÿÿÿÿ
+E
+java:S2140”")Use "java.util.Random.nextInt()" instead.(ïñ³¯ıÿÿÿÿ
+G
+java:S1128",Remove this unused import 'spritelib.Point'.(Ë‹á¨ıÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'spritelib.SingleSprite'.(›¨£ÿ
+P
+java:S1128":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹
+H
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ
+G
+java:S1128",Remove this unused import 'java.util.Timer'.(†£ñáÿÿÿÿÿ

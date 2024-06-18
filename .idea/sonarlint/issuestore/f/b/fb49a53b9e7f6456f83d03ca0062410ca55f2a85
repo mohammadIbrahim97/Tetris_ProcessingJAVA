@@ -1,0 +1,24 @@
+
+x
+java:S1066“"/Merge this if statement with the enclosing one.(¿Öí¿úÿÿÿÿ8¥Ÿ¼Ü‚2J$71eb2f53-a16d-43cb-856f-53181b20ec57
+Ž	java:S112ñ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8§Ÿ¼Ü‚2J$52ea98ae-8ed9-434b-8cc9-3265c14dc3a5
+g
+java:S1659"Declare "y" on a separate line.(±šß¯ùÿÿÿÿ8«Ÿ¼Ü‚2J$8975870f-5774-4491-bf37-a3a91e72eef1
+‰
+java:S16593"FDeclare "speedDown" and all following declarations on a separate line.(¼œòÅ8«Ÿ¼Ü‚2J$5a4ce3da-3480-4197-82bf-7f39d889d213
+•
+java:S3776f"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Ö×õÄ8®Ÿ¼Ü‚2J$609266ad-4607-4d06-81dc-1329b81df9f6
+r
+java:S1940ƒ")Use the opposite operator ("<=") instead.(‡Ôæúùÿÿÿÿ8°Ÿ¼Ü‚2J$eda9b198-a9d6-40d7-9640-98c6cc05cdbc
+r
+java:S1940ƒ")Use the opposite operator (">=") instead.(‡Ôæúùÿÿÿÿ8°Ÿ¼Ü‚2J$cb8148bd-c50c-48bf-a444-fa31322a4651
+m
+java:S1940Œ")Use the opposite operator ("<=") instead.(²©¢¢8°Ÿ¼Ü‚2J$7b87f54a-f167-4d7e-a767-33f760ee6996
+e
+java:S1116Ž"Remove this empty statement.(ôŸŽìúÿÿÿÿ8¶Ÿ¼Ü‚2J$38b96bef-3a7f-4bf7-a158-c5c4eb1eea29
+e
+java:S1116¤"Remove this empty statement.(ôŸŽìúÿÿÿÿ8·Ÿ¼Ü‚2J$68b2a4c6-f6de-4764-b9d9-3fced6f3bec4
+t
+java:S1128",Remove this unused import 'spritelib.Point'.(Ë‹á¨ýÿÿÿÿ8–ÄÜ‚2J$8aca42dc-5daa-478d-9207-5316777a64b4
+v
+java:S1128"3Remove this unused import 'spritelib.SingleSprite'.(›¨£ÿ8–ÄÜ‚2J$ce6afd9a-20a5-48cb-a54d-7c50ddeb4b7c

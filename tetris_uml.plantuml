@@ -1,0 +1,150 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+enum ANCHORTYPE << enumeration >> {
+  + values(): ANCHORTYPE[]
+  + valueOf(String): ANCHORTYPE
+}
+class AnimSprite {
+  + resetAnimCounter(): void
+  + draw(PApplet, Point): void
+}
+enum EVENTTYPE << enumeration >> {
+  + values(): EVENTTYPE[]
+  + valueOf(String): EVENTTYPE
+}
+class GameGrid {
+  + setNextshape(): void
+  + update(): void
+  + addScore(): int
+  + drawGrid(): void
+   grid: int[][]
+   cellSize: int
+   currentShape: Shape
+}
+class IShape {
+   id: int
+}
+class JShape {
+   id: int
+}
+class LShape {
+   id: int
+}
+class Main {
+  + main(String[]): void
+}
+class MultiSprite {
+  + addFrameCopy(int): void
+  + draw(PApplet, Point): void
+  + setFrame(int): boolean
+  + addFrames(PApplet, PImage, int, int, int): void
+  + clearFrames(): void
+  + nextFrame(): void
+   nextFrame: int
+   currentFrame: int
+   frames: List<PImage>
+   frameCount: int
+   onSpriteEvent: SpriteEvent
+}
+class OShape {
+   id: int
+}
+class Point {
+   y: int
+   x: int
+}
+class Rectangle {
+  + top(): int
+  + right(): int
+  + bottom(): int
+  + left(): int
+   size: Size
+   topleft: Point
+}
+class SShape {
+   id: int
+}
+class Sequence {
+  + addFrame(int): void
+  + getFrame(int): int
+  + addRange(int, int): void
+   name: String
+   length: int
+   nextSequenceName: String
+}
+class SequencedSprite {
+  + addSequence(Sequence): void
+  + gotoSequence(String): void
+   nextFrame: int
+}
+class Shape {
+  + rotate(): void
+  + normalSpeed(): void
+  + speedDown(): void
+  + update(): void
+  - getTranspose(int[][]): int[][]
+  - getReverseMatrix(int[][]): int[][]
+  - checkLine(): void
+   block: PImage
+   coords: int[][]
+   deltaX: int
+   color: int
+   id: int
+   y: int
+   x: int
+}
+class SingleSprite {
+  + draw(PApplet, Point): void
+}
+class Size {
+   height: int
+   width: int
+}
+class Sprite {
+  + hide(): void
+  + getPlotRect(int, int): Rectangle
+  + draw(PApplet, Point): void
+  + getPlotRect(Point): Rectangle
+  + show(): void
+   plotRectangle: Rectangle
+   anchor: ANCHORTYPE
+   visible: boolean
+   size: Size
+}
+interface SpriteEvent << interface >> {
+  + event(Sprite, int, EVENTTYPE): void
+}
+class TShape {
+   id: int
+}
+class TetrisGame {
+  - drawBackground(): void
+  + draw(): void
+  + drawScore(): void
+  + keyReleased(): void
+  + settings(): void
+  + keyPressed(): void
+  + setup(): void
+  - drawCurrentShape(): void
+}
+class ZShape {
+   id: int
+}
+
+AnimSprite       -[#000082,plain]-^  MultiSprite     
+GameGrid         -[#000082,plain]-^  TetrisGame      
+IShape           -[#000082,plain]-^  Shape           
+JShape           -[#000082,plain]-^  Shape           
+LShape           -[#000082,plain]-^  Shape           
+MultiSprite      -[#000082,plain]-^  Sprite          
+OShape           -[#000082,plain]-^  Shape           
+SShape           -[#000082,plain]-^  Shape           
+SequencedSprite  -[#000082,plain]-^  AnimSprite      
+SingleSprite     -[#000082,plain]-^  Sprite          
+TShape           -[#000082,plain]-^  Shape           
+ZShape           -[#000082,plain]-^  Shape           
+@enduml
